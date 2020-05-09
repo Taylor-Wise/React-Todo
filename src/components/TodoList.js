@@ -3,6 +3,7 @@
 
 import React from "react";
 import ToDo from "./Todo";
+import "./Todo.css";
 
 const ToDoList = props => {
 
@@ -15,7 +16,10 @@ const ToDoList = props => {
             item={task}
             />
         ))}
+        <button onClick={props.clearCompleted}>Clear Completed</button>
         </div>
+
+
         )
 };
 
